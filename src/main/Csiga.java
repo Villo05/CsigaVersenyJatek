@@ -31,6 +31,19 @@ public class Csiga {
         tav += lepes;
     }
 
+    public void rajzol(){
+        switch (szin) {
+            case PIROS: System.out.print(PIROS); break;
+            case KEK:   System.out.print(KEK); break;
+            case ZOLD:  System.out.print(ZOLD); break;
+        }
+        
+        for (int i = 0; i < tav; i++) {
+            System.out.print("-");
+        }
+        System.out.println("🐌" + RESET);
+    }
+    
     public Szinek getSzin() {
         return szin;
     }
