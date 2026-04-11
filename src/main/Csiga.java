@@ -33,9 +33,18 @@ public class Csiga {
 
     public void rajzol(){
         switch (szin) {
-            case PIROS: System.out.print(PIROS); break;
-            case KEK:   System.out.print(KEK); break;
-            case ZOLD:  System.out.print(ZOLD); break;
+            case PIROS: 
+                System.out.println("Piros: ");
+                System.out.print(PIROS); 
+                break;
+            case KEK:   
+                System.out.println("Kék: ");
+                System.out.print(KEK); 
+                break;
+            case ZOLD:  
+                System.out.println("Zöld: ");
+                System.out.print(ZOLD); 
+                break;
         }
         
         for (int i = 0; i < tav; i++) {
